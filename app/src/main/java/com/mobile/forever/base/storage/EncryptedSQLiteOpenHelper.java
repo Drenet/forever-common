@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 /**
  * Created by Chris on 2/25/2016.
  */
-public abstract class EncryptedSQLiteOpenHelper extends SQLiteOpenHelper {
+public abstract class EncryptedSQLiteOpenHelper extends ForeverSQLiteOpenHelper {
 
     public EncryptedSQLiteOpenHelper(Context context, String name,
                                      SQLiteDatabase.CursorFactory factory, int version,
