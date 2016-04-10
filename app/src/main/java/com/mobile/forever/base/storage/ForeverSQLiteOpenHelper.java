@@ -15,6 +15,14 @@ public abstract class ForeverSQLiteOpenHelper extends SQLiteOpenHelper {
     }
 
     /**
+     * This just makes things easier...the code sees them the same, but when we call through
+     * this method we can get rid of the hard cast.
+     */
+    public String[] arg(String... args){
+        return args;
+    }
+
+    /**
      * TODO: Helper methods to read cursor/db values
      */
 }
